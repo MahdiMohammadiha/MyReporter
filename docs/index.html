@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyReporter - Docs</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header-wrapper">
+            <h1>📊 MyReporter</h1>
+
+            <div class="header-actions">
+                <a class="github-link" href="https://github.com/MahdiMohammadiha/MyReporter" target="_blank"
+                    title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <button id="toggle-theme" title="Toggle theme">🌙</button>
+            </div>
+        </div>
+
+        <!-- BADGES -->
+        <p>
+            <img src="https://img.shields.io/badge/python-3.10+-blue.svg">
+            <img src="https://img.shields.io/badge/UI-PySide6-green.svg">
+            <img src="https://img.shields.io/badge/platform-windows-lightgrey.svg">
+            <img src="https://img.shields.io/badge/license-GPLv3-blue.svg">
+        </p>
+
+        <!-- DESCRIPTION -->
+        <p>
+            A lightweight desktop application for managing and sending automated messages via the Bale Bot API.
+        </p>
+
+        <p>
+            Built with PySide6, MyReporter provides a simple and clean UI for creating, editing, storing, and sending
+            predefined activity reports.
+        </p>
+
+        <h2>✨ Features</h2>
+        <ul>
+            <li>Add / Edit / Delete activity messages</li>
+            <li>Send selected messages directly to Bale channel/bot</li>
+            <li>Local persistence using JSON storage</li>
+            <li>Simple and clean PySide6 desktop UI</li>
+            <li>Integrated Bale Bot API client</li>
+            <li>Ready for packaging as Windows executable (PyInstaller)</li>
+            <li>Dark mode support (optional / extensible)</li>
+        </ul>
+
+        <h2>🧱 Project Structure</h2>
+
+        <div class="code-block">
+            <pre><code>MyReporter/
+├── assets/              # UI images and icons
+│   ├── MyReporterBot raw.png
+│   ├── MyReporterBot.ico
+│   └── MyReporterBot.png
+├── docs/                # Web docs and landing page
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── .env                 # Environment variables (BOT_TOKEN, CHANNEL_ID)
+├── .gitignore
+├── bale_api.py          # Bale Bot API client wrapper
+├── config.py            # Bot token and channel configuration
+├── env_template.txt
+├── LICENSE
+├── main.py              # Optional test script for API
+├── README.md
+├── requirements.txt
+├── test_api.py
+└── ui.py                # Main GUI application (entry point)
+</code></pre>
+        </div>
+
+        <h2>🚀 Getting Started</h2>
+
+        <h3>1. Clone repository</h3>
+        <div class="code-block"><pre><code>git clone https://github.com/your-username/MyReporter.git
+cd MyReporter</code></pre></div>
+
+        <h3>2. Install dependencies</h3>
+        <div class="code-block"><pre><code>pip install -r requirements.txt</code></pre></div>
+
+        <p>Or:</p>
+
+        <div class="code-block"><pre><code>pip install PySide6 requests python-dotenv pyinstaller</code></pre></div>
+
+        <h3>3. Configure environment variables</h3>
+
+        <p>Create a <code>.env</code> file:</p>
+
+        <pre><code>BOT_TOKEN=your_bale_bot_token
+CHANNEL_ID=your_channel_id</code></pre>
+
+        <h3>4. Run application</h3>
+
+        <pre><code>python main.py</code></pre>
+
+        <h2>📦 Build Executable</h2>
+
+        <div class="code-block"><pre><code>pyinstaller --onefile --windowed --name MyReporter --icon=assets/MyReporterBot.ico --add-data ".env;." main.py</code></pre></div>
+
+        <p>Output:</p>
+
+        <pre><code>dist/MyReporter.exe</code></pre>
+
+        <h2>⚠️ Notes</h2>
+
+        <ul>
+            <li>Keep BOT token private</li>
+            <li>Ensure .env exists when running EXE</li>
+            <li>Use main.py as entry point</li>
+        </ul>
+
+        <h2>📄 License</h2>
+
+        <p>
+            This project is licensed under the GNU General Public License v3.0 (GPLv3).
+            See:
+            <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">
+                https://www.gnu.org/licenses/gpl-3.0.en.html
+            </a>
+        </p>
+
+        <h2>💡 Contribution</h2>
+
+        <p>
+            Contributions are welcome!<br>
+            If you have any <b>ideas, suggestions, or bug reports</b>, please open an issue or submit a PR.
+        </p>
+
+        <hr>
+
+        <footer>
+            Created by <i>Mahdi Mohammadiha</i> — © 2026 <i>MyReporter</i> Project
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
