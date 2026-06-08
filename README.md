@@ -104,13 +104,16 @@ dist/MyReporter.exe
 
 ## 📄 License
 
-This project is licensed under the GNU General Public License v3.0 (GPLv3).
-See: https://www.gnu.org/licenses/gpl-3.0.en.html
+This project is licensed under the [GNU General Public License v3.0 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 
 ## 💡 Contribution
 Contributions are welcome!  
-If you have any **ideas, suggestions, or bug reports**, please open an issue or submit a PR.  
+If you have any **ideas**, **suggestions**, or **bug reports**, please open an issue or submit a PR.
+
+🔗 GitHub Page: https://MahdiMohammadiha.github.io/MyReporter/ <br>
+🔗 GitHub Repository: https://github.com/MahdiMohammadiha/MyReporter/
+
 
 ---
 
